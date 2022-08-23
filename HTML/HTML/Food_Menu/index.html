@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<!--The content information regarding health food and guidlines came from the dept of health the information pdf are included-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Food Menu</title>
+    
+</head>
+
+<body>
+    <!--header section for navigation-->
+    <div id="header">
+        <div>
+            <nav>
+             
+                <ul>
+                   
+           <li><a href="#home">Home</a>|</li> 
+           <li><a href="#fruit_vegtable">Fruit & Veg</a>|</li> 
+            <li><a href="#wholegrains">Wholegrains</a>|</li>
+            <li><a href="#dairy">Dairy</a>|</li>   
+           <li><a href="#healthy_protein">Raw Protein</a>|</li> 
+           <li><a href="#fats">Fats</a>|</li> 
+           <li><a href="#portion">Portion Guideline</a>|</li> 
+           <li><a href="#footer">Contact</a></li> 
+                  </ul>
+            
+        </nav>
+        </div>
+      
+        <h1> 
+            <span style="color:rgb(0, 0, 0)">Healthy Food Choice!</span>
+            
+        </h1>
+    </div>    
+    <!--main_content section-->
+    <div id="main_content">
+            <header>Food Pyramid </header>
+            <div class="container">
+               <div class="shape one">
+                <div class="button">
+                <span></span>
+                  <button class="add">+</button>
+                  <input type="number" value="0">
+                  <button class="subtract">-</button>
+                  <button onclick="myFunction()">Click Me!</button>
+                </div>
+              </div>
+                <div class="shape two">
+                <div class="button">
+               <span></span>
+                  <button class="add">+</button>
+                  <input type="number" value="0">
+                  <button class="subtract">-</button>
+                  <button onclick="myFunction1()">Click Me!</button>
+                </div>
+              </div>
+              <div class="shape three">
+                <div class="button">
+             <button class="add">+</button>
+                  <input type="number" value="0">
+                  <button class="subtract">-</button>
+                  <button onclick="myFunction2()">Click Me!</button>
+                </div>
+              </div>
+              <div class="shape four">
+                <div class="button">
+               <span></span>
+                  <button class="add">+</button>
+                  <input type="number" value="0">
+                  <button class="subtract">-</button>
+                  <button onclick="myFunction3()">Click Me!</button>
+                </div>
+              </div>
+              <div class="shape five">
+                <div class="button">
+              <span></span>
+                  <button class="add">+</button>
+                  <input type="number" value="0">
+                  <button class="subtract">-</button>
+                  <button onclick="myFunction4()">Click Me!</button>
+                     
+                </div>
+              </div>
+              <div class="shape six" >
+                  <div class="button">
+                <span></span>
+                  <button class="add">+</button>
+                  <input type="number" value="0">
+                  <button class="subtract">-</button>
+                  <button onclick="myFunction5()">Click Me!</button>
+                  <link rel="icon" type="image/x-icon" href="/images/favicon.icon">
+                </div>
+              </div>
+            </div>
+          </div>
+        
+            <script>
+            let buttons = document.querySelectorAll('.button');
+            let buttonsArray = Array.from(buttons);
+            for (const btn of buttonsArray) {
+              let input = btn.querySelector('input');
+              btn.querySelector('.add').addEventListener('click', () => {
+                input.value = parseInt(input.value) + 1;
+              });
+       
+       
+              btn.querySelector('.subtract').addEventListener('click', () => {
+                input.value = parseInt(input.value) - 1;
+              });
+            }
+       
+          </script> 
+          
+          <script>
+             function myFunction() {
+               alert("Fats Shelf : This is not a healthy choice");
+             }
+           </script>
+            <script>
+                function myFunction1() {
+                  alert("Protein Shelf : Limit your choice!");
+                }
+              </script>
+          <script>
+            function myFunction2() {
+              alert("Diary Shelf");
+            }
+          </script>
+          <script>
+            function myFunction3() {
+              alert("Wholegrains Shelf");
+            }
+          </script>
+          <script>
+            function myFunction4() {
+              alert("Fresh Fruit & Veg");
+            }
+          </script>
+          <script>
+            function myFunction5() {
+              alert("Portion selector: Remember implement portion control");
+            }
+          </script>   
+                                                                                                                                                                       
+    <!--fruit_vegtables section-->
+    <div id="fruit_vegtable">
+        
+        <h2>Fresh Fruit & Veg </h2>
+        <p>
+            The foods on this shelf are low in calories and contain fibre which aids digestion.
+            They provide many important vitamins and minerals.<br>
+           <strong> Choose 5 -7 servings a day.</strong><br>
+            The foods in this shelf can help control body weight as part of a healthy lifestyle
+            and contain nutrients that protect against heart disease and cancer.
+            Enjoy a variety of coloured fruit and vegetables to benefit from the different minerals
+            and vitamins each contains. Oranges, strawberries or kiwifruit are rich in vitamin C which aids iron
+            absorption.
+            Most fruit and vegetables are fat free.
+
+        </p>
+        <table>
+            <tr>
+                <td>
+                    <img src="Images/fruit_vegtable_1.jpg" alt="Fruit & Veg"></td>
+                <td>
+                    <img src="Images/fruit_vegtable_2.jpg" alt="Fruit & Veg"></td>
+                <td>
+                    <img src="Images/fruit_vegtable_3.jpg" alt="Fruit & Veg"></td>
+                <td>
+                    <img src="Images/fruit_vegtable_4.jpg" alt="Fruit & Veg"></td>
+            </tr>
+
+            <td>seasonal</td>
+            <td>fruit</td>
+            <td>vegtable</td>
+            <td>seasonal_vegtable</td>
+        </table>
+        <P>
+            <strong>Healthy Eating Tip</strong>s<br> Base your meals on vegetables,
+            salad and fruit. Add salad vegetables to sandwiches.
+            Limit fruit juice to once a day with a meal and always choose unsweetened.
+            Choose fruit and raw vegetables such as chopped carrots as tasty, healthy snacks.
+            Add vegetables to stir-fries, stews and curries – the more vegetables the better.
+
+        </P>
+    </div>
+    <!--wholegrain section-->
+    <div id="wholegrains">
+        <h2>Carbohydrates </h2>
+        <p><strong>Wholemeal cereals and breads, potatoes, pasta and rice </strong><br>
+            The foods on this shelf are the best energy providers for your body. <br>
+            <strong>Choose 3 to 5 servings a day.Up to 7 servings for teenage boys and men aged 19–50.
+            </strong>
+            <strong>Very active people will need more.</strong><br>Wholegrain choices contain fibre to help your digestive
+            system and can protect against bowel diseases. Wholemeal breads, cereals and potatoes provide the best
+            energy for the body to work. The amount of energy you need depends on your physical activity levels. Adults
+            watching their weight will need less. <strong>The number of servings you need depends on age, size, if you are a man or
+            a woman and on activity levels.</strong>
+        </p>
+        <table>
+            <tr>
+                <td>
+                    <img src="Images/wholegrains_1.jpg" alt="Wholegrains"></td>
+                <td>
+                    <img src="Images/wholegrains_2.jpg" alt="Wholegrains"></td>
+                <td>
+                    <img src="Images/wholegrains_3.jpg" alt="Wholegrains"></td>
+                <td>
+                    <img src="Images/wholegrains_4.jpg" alt="Wholegrains"></td>
+            </tr>
+
+            <td>potatoes</td>
+            <td>wheat</td>
+            <td>pasta</td>
+            <td>bread</td>
+        </table>
+        <P><strong>Healthy Eating Tips</strong> <br>Choose a variety of foods from this shelf every day. 
+            Try using brown rice and wholewheat pasta and check your portion guide.
+        </P>
+    </div>
+    <!--dairy section-->
+    <div id="dairy">
+        <h2>Cheese Milk & Yogurt</h2>
+        <p><strong>Milk, yogurt and cheese</strong> <br>Calcium found in dairy foods is important for bone health and especially during the teenage growth spurt.
+             Vitamin D helps absorb calcium better. The Irish diet is low in vitamin D – talk to your pharmacist or doctor about taking a supplement.
+              Low fat options provide the same amount of calcium and other nutrients with fewer calories and saturated fat. 
+            All foods from this shelf are a good source of calcium, protein, vitamin B12, riboflavin and vitamin A. 
+          </p>
+        <table>
+            <tr>
+                <td>
+                    <img src="Images/dairy_1.jpg" alt="Dairy"></td>
+                <td>
+                    <img src="Images/dairy_2.jpg" alt="Dairy"></td>
+                <td>
+                    <img src="Images/dairy_3.jpg" alt="Dairy"></td>
+                <td>
+                    <img src="Images/dairy_4.jpg" alt="Dairy"></td>
+            </tr>
+
+            <td>cheese</td>
+            <td>milk</td>
+            <td>greek yogurt</td>
+            <td>yogurt</td>
+        </table>
+        <P><strong> Healthy Eating Tips </strong><br>Choose reduced-fat or low-fat varieties.
+             Choose low fat milk and yogurt more often than cheese. Milk on cereal can be a good 
+             way to reach 5 servings a day if aged 9 to 18 years. Some yogurts and yogurt drinks 
+             can have added sugar. Check the label.If choosing dairy alternatives such as soya milk and yogurts,
+              choose those with added calcium. </P>
+    </div>
+    <!--healthy_protein section-->
+    <div id="healthy_protein">
+        <h2>Tasty Mains </h2>
+        <p><strong>Meat, poultry, fish, eggs, beans and nuts</strong><br>
+            The foods on this shelf provide protein for growth and repair. 
+            They are also the main source of iron for healthy blood.
+             <strong>Choose 2 servings a day. 
+            </strong><br>Lean red meat is a good source of iron.
+             Chicken, turkey and fish are good low-fat options. Oily fish provides essential omega 3 fats. 
+             Beans and eggs are good sources of protein and are low in fat. 
+             They are a good choice for meat free days.
+             Limit processed salty meats such as sausages, bacon and ham – not every day.         
+        </p>
+        <table>
+            <tr>
+                <td>
+                    <img src="Images/healthy_protein_1.jpg" alt="Raw Protein"></td>
+                <td>
+                    <img src="Images/healthy_protein_2.jpg" alt="Raw Protein"></td>
+                <td>
+                    <img src="Images/healthy_protein_3.jpg" alt="Raw Protein"></td>
+                <td>
+                    <img src="Images/healthy_protein_4.jpg" alt="Raw Protein"></td>
+            </tr>
+
+            <td>raw protein</td>
+            <td>fresh protein </td>
+            <td>healthy protein</td>
+            <td>tender steak</td>
+        </table>
+            <P><strong>Healthy Eating Tips</strong> Base your meals on vegetables, salad and fruit. 
+            Add salad vegetables to sandwiches. Limit fruit juice to once a day with a meal and always choose unsweetened. Choose fruit and raw vegetables such as chopped carrots as tasty, healthy snacks. 
+            Add vegetables to stir-fries, stews and curries – the more vegetables the better.
+        </P>
+
+    </div>
+    <!--fats section-->
+    <div id="fats">
+        <h2>Fatty Oils</h2>
+        <p><strong>Foods and drinks high in fat, sugar and salt</strong>
+            Most people consume snacks high in fat, sugar and salt and sugar sweetened drinks up to 
+            6 times a day (Healthy Ireland Survey 2016). There are no recommended servings for this shelf 
+            because they are not needed for good health. These foods have little nutritional value and may 
+            cause obesity which can lead to heart disease, type 2 diabetes and some cancers. Many processed
+             foods like cakes, biscuits and confectionery contain high levels of added sugars and can be 
+             high in calories. Eating too much salt can lead to raised blood pressure, which triples your 
+             chances of developing heart disease and stroke. Many processed foods like takeaways and ready 
+             meals are high in fat and can be harmful to heart health.            
+        </p>
+        <table>
+            <tr>
+                <td>
+                    <img src="Images/fats_1.jpg" alt="Fats"></td>
+                <td>
+                    <img src="Images/fats_2.jpg" alt="Fats"></td>
+                <td>
+                    <img src="Images/unhealthy_1.jpg" alt="Fats"></td>
+                <td>
+                    <img src="Images/unhealthy_4.jpg" alt="Fats"></td>
+            </tr>
+
+            <td>butter & oil</td>
+            <td>spread</td>
+            <td>candy</td>
+            <td>fries</td>
+        </table>
+        <P><strong>Healthy Eating Tips</strong> Limit foods and drinks high in fat, sugar and salt to sometimes 
+            – not every day. Choose smaller amounts or fun-size servings. Limit chips and takeaway food as much 
+            as possible – most are very high in fat, salt and calories. 
+            Choose healthy snacks such as fruit and vegetables. Drink water instead of sugary drinks.
+        </P>
+
+    </div>
+    <!--serving guide section-->
+    <div id="portion">
+        <h2>How much to eat</h2>
+        <p><strong>Serving Size Guide</strong> <br><strong><em>1 serving</em></strong>
+           <br><strong>Cereals, cooked rice and pasta </strong><br>Use a 200ml disposable plastic cup to guide portion serving size.<br> Reduced fat spread Portion packs of reduced fat spread found in cafes can guide the amount you use. <br>One should be enough for two slices of bread. <br>
+           <strong>Vegetable, salad and fruit </strong><br>Use a 200ml disposable plastic cup to guide portion serving size. <br>Oils Use one teaspoon of oil per person when cooking or in salads. cup dry porridge oats or ½ cup unsweetened muesli 1 cup flaked type breakfast cereal 1 cup cooked rice, pasta or noodles Apple, orange, pear or banana 1 Plums, kiwis or mandarin oranges 2 Strawberries 6 Grapes 10 Raspberries 16 Cooked vegetables – fresh or frozen ½ cup Salad – lettuce, tomato, cucumber 1 bowl <br>
+            <strong> Meat, poultry and fish</strong> <br>The palm of the hand, width and depth without
+            fingers and thumbs, shows how much meat, poultry and fish you need in a day. Lean beef, 
+            lamb, pork, mince or poultry 50–75g cooked (half size of palm of hand) Cooked fish 100g <br>
+            <strong>Cheese </strong><br>Use two thumbs, width and depth to guide portion size.2 thumbs (25g) of hard or semi-hard cheese such as cheddar or edam 2 thumbs (25g) soft cheese such as brie or camembert 2
+            
+
+        </p>
+      
+           </div>
+    <!--footer section-->
+    <div id="footer">
+        <h2>Contact Me!</h2>
+        <p>Sinead's Mobile: +353 876030099</p>
+        <p>Copyrigt &copy; 2022 , SJK_Code</p>
+        <p>All rights reserved!<br>
+            developed and maintained by SJK</p>
+        <hr>
+        <!-- section for navigation-->
+        <div>
+            <nav>
+              <span>
+                <ul>
+           <li><a href="#home">Home</a>|</li> 
+           <li><a href="#fruit_vegtable">Fruit & Veg</a>|</li> 
+           <li><a href="#wholegrains">Wholegrains</a>|</li> 
+            <li><a href="#dairy">Dairy</a>|</li>
+          <li><a href="#healthy_protein">Raw Protein</a>|</li>  
+          <li><a href="#fats">Fats</a>|</li>  
+           <li><a href="#portion">Portion Guideline</a>|</li> 
+          <li> <a href="#footer">Contact</a></li> 
+            </ul>
+          </span>
+        </nav>
+        </div>
+    </div>
+   
+</body>
+
+</html>
